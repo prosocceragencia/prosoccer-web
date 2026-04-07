@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Pro Soccer Agencia</title>
-NO ES PARA TODOS
-SOLO PARA LOS QUE VAN EN SERIO
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { margin:0; font-family: Arial; background:#000; color:#fff; }
-    header { display:flex; justify-content:space-between; padding:20px; border-bottom:1px solid #222; }
+    header { position:fixed; width:100%; top:0; display:flex; justify-content:space-between; padding:20px; background:rgba(0,0,0,0.7); z-index:10; }
     header h1 { color:#FFD700; }
-    section { padding:60px 20px; text-align:center; }
-    .btn { background:#FFD700; color:#000; padding:12px 20px; border:none; border-radius:10px; cursor:pointer; text-decoration:none; }
+    section { padding:80px 20px; text-align:center; }
+    .hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6') center/cover no-repeat; position:relative; }
+    .overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); }
+    .hero-content { position:relative; z-index:2; }
+    .hero h2 { font-size:50px; margin-bottom:20px; }
+    .btn { background:#FFD700; color:#000; padding:15px 25px; border-radius:10px; text-decoration:none; font-weight:bold; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { background:#111; padding:20px; border-radius:15px; }
+    .card { background:#111; padding:15px; border-radius:15px; }
+    img { width:100%; border-radius:10px; }
     input { width:100%; padding:10px; margin:5px 0; border-radius:8px; border:none; }
   </style>
 </head>
@@ -25,78 +27,41 @@ SOLO PARA LOS QUE VAN EN SERIO
   <h1>PRO SOCCER</h1>
 </header>
 
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>NO ES PARA TODOS</h2>
+    <p>Solo para jugadores que van en serio</p>
+    <p>Cupos limitados · Proyección internacional</p>
+    <br>
+    <a class="btn" href="https://wa.me/573219532860" target="_blank">QUIERO SER PROFESIONAL</a>
+  </div>
+</div>
+
 <section>
-  <h2>¿Estás listo para avanzar al siguiente nivel?</h2>
-  <p>No es para todos. Solo para jugadores que van en serio.</p>
-  <p>Representación profesional para futbolistas que quieren competir al máximo nivel.</p>
-  <a class="btn" href="https://wa.me/573219532860" target="_blank">Aplicar ahora</a>
-</section>
-<img src="https://via.placeholder.com/300" style="width:100%; border-radius:10px;">
-<section>
-  <h2>Servicios</h2>
-  <section>
- <section>
   <h2>Proyección Real</h2>
   <div class="grid">
-    
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/1.jpg">
-      <p>Talento en formación</p>
-    
 
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/2.jpg">
-      <p>Proyección internacional</p>
-    
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/1.jpg"><p>Talento en formación</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/2.jpg"><p>Proyección internacional</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/3.jpg"><p>Fichajes reales</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/4.jpg"><p>Contrato profesional</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/5.jpeg"><p>Entrenamiento elite</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/6.jpeg"><p>Experiencia internacional</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/7.jpeg"><p>Oportunidades reales</p></div>
+    <div class="card"><img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/8.jpeg"><p>Pro Soccer en acción</p></div>
 
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/3.jpg">
-      <p>Fichajes reales</p>
-    
-
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/4.jpg">
-      <p>Contrato profesional</p>
-    
-
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/5.jpeg">
-      <p>Entrenamiento de alto nivel</p>
-    
-
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/6.jpeg">
-      <p>Experiencia internacional</p>
-    
-
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/7.jpeg">
-      <p>Oportunidades reales</p>
-    
-<div class="card">
-  <img src="https://raw.githubusercontent.com/prosocceragencia/prosoccer-web/main/8.jpeg">
-  <p>Pro Soccer en acción</p>
-
-  
-
-
-
-<section>
-  <h2>Proyección Real</h2>
-  
   </div>
 </section>
-<section>
-  <h2>¿Por qué Pro Soccer?</h2>
-  <p>Trabajamos con jugadores comprometidos que buscan oportunidades reales.</p>
-</section>
+
 <section>
   <h2>Aplica a Pro Soccer</h2>
+  <p>Menos del 10% de los jugadores son seleccionados</p>
   <input placeholder="Nombre completo">
   <input placeholder="Edad">
   <input placeholder="Posición">
   <input placeholder="Club actual">
-  <input placeholder="Video">
+  <input placeholder="Link de video">
   <br><br>
   <a class="btn" href="https://wa.me/573219532860" target="_blank">Enviar aplicación</a>
 </section>
@@ -108,3 +73,4 @@ SOLO PARA LOS QUE VAN EN SERIO
 
 </body>
 </html>
+
